@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "9001bf82-4555-4951-9174-9edfeae1eae2",
+		"name": "R2 API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25862338"
+	},
+	"item": [
+		{
+			"name": "Search Book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/backend/v1/library/search?id=1tLPDwAAQBAJ",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"backend",
+						"v1",
+						"library",
+						"search"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1tLPDwAAQBAJ"
+						},
+						{
+							"key": "title",
+							"value": "Juegos",
+							"disabled": true
+						},
+						{
+							"key": "subtitle",
+							"value": "En Llamas",
+							"disabled": true
+						},
+						{
+							"key": "authors",
+							"value": "Suzanne Collins",
+							"disabled": true
+						},
+						{
+							"key": "categories",
+							"value": "Novela, Ciencia Ficcion",
+							"disabled": true
+						},
+						{
+							"key": "publish_date",
+							"value": "15-12-2023",
+							"description": "dd-MM-yyyy",
+							"disabled": true
+						},
+						{
+							"key": "editor",
+							"value": "Planeta",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/backend/v1/library/1tLPDwAAQBAJ",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"backend",
+						"v1",
+						"library",
+						"1tLPDwAAQBAJ"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
